@@ -8,7 +8,7 @@ const app = express()
 
 dotenv.config({ path: "./config.env" })
 require('./db/connection')
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT ||5000;
 
 //express json format
 app.use(express.json());
